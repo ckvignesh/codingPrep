@@ -1,2 +1,8 @@
 const chai = window.chai;
-const expect = chai.expect;
+var expect = chai.expect;
+
+describe("lengthOfLongestSubstring", () => {
+  it("should find longest substring", () => {
+    expect(["abcabcbb"]).to.deep.equal(["abc"]);
+  });
+});
