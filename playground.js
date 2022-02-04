@@ -1,1 +1,4 @@
-// file for testing and coding before running
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+
+myRegex.test(myString);
