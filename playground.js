@@ -1,50 +1,24 @@
-"use strict";
+const users = {
+  Alan: {
+    online: false,
+  },
+  Jeff: {
+    online: true,
+  },
+  Sarah: {
+    online: false,
+  },
+};
 
-process.stdin.resume();
-process.stdin.setEncoding("utf-8");
-
-let inputString = "";
-let currentLine = 0;
-
-process.stdin.on("data", (inputStdin) => {
-  inputString += inputStdin;
-});
-
-process.stdin.on("end", (_) => {
-  inputString = inputString
-    .trim()
-    .split("\n")
-    .map((string) => {
-      return string.trim();
-    });
-
-  main();
-});
-
-function readLine() {
-  return inputString[currentLine++];
-}
-
-/*
- * Complete the vowelsAndConsonants function.
- * Print your output using 'console.log()'.
- */
-function vowelsAndConsonants(s) {
-  var char = s.split("");
-  let arr;
-  for (let i = 0; i <= char.length; i++) {
-    switch (char[i]) {
-      case "a":
-      case "e":
-      case "i":
-      case "o":
-      case "u":
-        arr.unshift(char[i]);
-        break;
-      default:
-        arr.push(char[i]);
-        break;
+function countOnline(usersObj) {
+  // Only change code below this line
+  let count = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online === true) {
+      count++;
     }
-    console.log(arr.join(""));
   }
+  return count;
 }
+// Only change code above this line
+console.log(countOnline(users));
