@@ -6,3 +6,5 @@ describe("test", () => {
     expect(testFunc(3)).to.deep.equal(6);
   });
 });
+
+// mocha chai tests
