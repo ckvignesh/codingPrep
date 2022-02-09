@@ -5,7 +5,7 @@ function count_occur(str) {
     console.log("Invalid string");
     return;
   }
-  //cor loop to iterate over string
+  //for loop to iterate over string
   for (let i = 0; i < str.length; i++) {
     //variable counting occurrence
     let count = 0;
@@ -21,7 +21,7 @@ function count_occur(str) {
   }
 }
 
-let test_str = "gfghello";
+let test_str = "abcdabcdxyza";
 count_occur(test_str);
 
 // worked on rextester
