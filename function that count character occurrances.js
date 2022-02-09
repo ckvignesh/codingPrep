@@ -23,3 +23,5 @@ function count_occur(str) {
 
 let test_str = "gfghello";
 count_occur(test_str);
+
+// worked on rextester
