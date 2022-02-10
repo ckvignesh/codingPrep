@@ -19,7 +19,7 @@ polygon("abc");
 polygon(null);
 polygon(undefined);
 
-// ternary solution
+// ternary solution after refactoring
 
 // find the area of an n-interesting polygon,
 // where (n=1, A=1, n=2, A=5, n=3, A=13, n=4, A=25, and so on).
