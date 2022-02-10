@@ -21,7 +21,7 @@ function count_occur(str) {
   }
 }
 
-let test_str = "abcdabcdxyza";
+let test_str = "aaabbc";
 count_occur(test_str);
 
 // worked on rextester
