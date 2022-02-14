@@ -10,3 +10,9 @@ function staircase(n) {
 console.log(staircase(10));
 console.log(staircase(18));
 console.log(staircase(1));
+
+// const repeat = (str, n) => {
+//   console.log(str.repeat(n));
+// };
+
+// repeat("hello \n", 5);

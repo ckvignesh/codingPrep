@@ -13,7 +13,6 @@ const primeprint = (s, e) => {
     }
   }
 };
-
 console.log(primeprint(1, 100));
 
 // // print non prime nos between so and so
@@ -34,16 +33,16 @@ console.log(primeprint(1, 100));
 
 // console.log(nonprimeprint(1, 100));
 
-const primecheck = (n) => {
-  let prime = "prime";
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
-      prime = "not prime";
-      break;
-    }
-  }
-  return prime;
-};
+// const primecheck = (n) => {
+//   let prime = "prime";
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       prime = "not prime";
+//       break;
+//     }
+//   }
+//   return prime;
+// };
 
-console.log(primecheck(2));
-console.log(primecheck(70));
+// console.log(primecheck(2));
+// console.log(primecheck(70));
