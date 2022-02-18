@@ -1,19 +1,21 @@
-const isPrime = (s, e) => {
-  for (let i = s; i <= e; i++) {
-    let count = 0;
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) {
-        count++;
-        break;
-      }
-    }
-    if (i > 1 && count == 0) {
-      console.log(`${i} IS PRIME`);
-    } else {
-      console.log(`${i} is not Prime`);
-    }
-  }
-  return "";
+const recordCollection = {
+  2548: {
+    albumTitle: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
+  },
+  2468: {
+    albumTitle: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    albumTitle: "ABBA Gold",
+  },
 };
 
-isPrime(1, 1000);
+console.log(Object.keys(recordCollection).length);
